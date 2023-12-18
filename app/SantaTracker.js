@@ -1853,7 +1853,7 @@ const SantaTracker = () => {
                 {headerGroups.map((headerGroup, i) => (
                     <tr {...headerGroup.getHeaderGroupProps()} key={i} >
                         {headerGroup.headers.map((column, i) => (
-                            <th {...column.getHeaderProps()}>{column.render('Header')} key={i} </th>
+                            <th {...column.getHeaderProps()} key={i}>{column.render('Header')}</th>
                         ))}
                     </tr>
                 ))}
